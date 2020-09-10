@@ -1,0 +1,44 @@
+.container-general {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.container-general img {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  border-radius: 50%;
+}
+
+.container-general p {
+  font-weight: 600;
+  color: white;
+  background: #2a0c4e;
+  box-shadow: 4px 5px magenta;
+}
+
+.container-general h4 {
+  font-weight: 600;
+  background: magenta;
+  color: white;
+}
+.container-general h2 {
+  color: white;
+}
+
+.container-general h3 {
+  color: white;
+  padding: 5px 3px;
+  font-size: 1.5rem;
+  background: #2a0c4e;
+  box-shadow: 4px 5px magenta;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  background: greenyellow;
+}

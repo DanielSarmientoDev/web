@@ -1,0 +1,26 @@
+.header {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.header a {
+  padding: 5px 10px;
+  text-decoration: none;
+  color: white;
+  font-style: normal;
+}
+
+.header .Home a {
+  padding: 10px 5px;
+  border-radius: 10px;
+  background: greenyellow;
+  color: white;
+}
+.header .Home a:hover {
+  background: #2a0c4e;
+  transition: 0.5s all;
+}
+.change-color {
+  color: aquamarine;
+}
