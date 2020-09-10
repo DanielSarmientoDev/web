@@ -11,6 +11,7 @@
   height: 200px;
   margin: 10px;
   border-radius: 50%;
+  box-shadow: 1px 1px 30px magenta;
 }
 
 .container-general p {
@@ -41,4 +42,82 @@ a {
   text-decoration: none;
   color: black;
   background: greenyellow;
+}
+
+#list-skills {
+  counter-reset: li;
+  list-style: none;
+  *list-style: decimal;
+  font: 15px "trebuchet MS", "lucida sans";
+  padding: 0;
+  margin-bottom: 4em;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 50px greenyellow;
+}
+
+.skills {
+  text-align: center;
+}
+.skills h2 {
+  background: magenta;
+  box-shadow: 10px 10px 0 greenyellow;
+}
+#list-skills ol ol {
+  margin: 0 0 0 2em;
+  background: greenyellow;
+  border: 10px;
+  text-align: center;
+  color: white;
+}
+#list-skills ol ol:hover {
+  background: magenta;
+  color: white;
+}
+#list-skills li {
+  position: relative;
+
+  border: 10px;
+  display: block;
+  padding: 0.4em 0.4em 0.4em 2em;
+  *padding: 0.4em;
+  margin: 0.5em 0;
+  background: #2a0c4e;
+  text-decoration: none;
+  color: white;
+  border-radius: 0.3em;
+  transition: all 0.3s ease-out;
+}
+
+#list-skills li:hover {
+  border: 10px;
+  background: #eee;
+  color: black;
+}
+
+#list-skills li:hover:before {
+  transform: rotate(360deg);
+}
+#list-skills li ol {
+  color: white;
+}
+#list-skills li ol:hover {
+  color: greenyellow;
+  background: #eee;
+}
+#list-skills li:before {
+  content: counter(li);
+  counter-increment: li;
+  position: absolute;
+  left: -1.3em;
+  top: 50%;
+  margin-top: -1.3em;
+  background: magenta;
+  height: 2em;
+  width: 2em;
+  line-height: 2em;
+  border: 0.3em solid #fff;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 2em;
+  transition: all 0.3s ease-out;
 }

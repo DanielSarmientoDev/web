@@ -7,7 +7,7 @@ import { LayoutComponent } from './layout/layout.component';
 import { SharedModule } from './SharedModule/shared.module';
 import { RouterModule } from '@angular/router';
 import { CoreModule } from './Core/core.module';
-import { NgxPictureModule } from 'ngx-picture';
+
 @NgModule({
   declarations: [AppComponent, LayoutComponent],
   imports: [
@@ -16,7 +16,6 @@ import { NgxPictureModule } from 'ngx-picture';
     SharedModule,
     RouterModule,
     CoreModule,
-    NgxPictureModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
